@@ -4,7 +4,7 @@ node('master') {
 	git credentialsId: '7cb45881-85d8-4329-ac26-527a2febf958', url: 'git@github.com:beeva-robertoiglesias/course-cicd.git'
   }
   stage('Test') {
-   sh './simplehttpserver/tests/nittests.sh ./simplehttpserver/'
+   sh './simplehttpserver/tests/unittests.sh ./simplehttpserver/'
 }
 }
 
